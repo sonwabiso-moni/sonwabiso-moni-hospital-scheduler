@@ -13,28 +13,28 @@ The current manual appointment scheduling process in hospitals is time-consuming
 This project will focus on developing a user-friendly web application for patients and hospital staff to manage appointments efficiently. It will integrate with existing hospital systems to ensure real-time availability and reduce errors.
 
  ## Context Diagram
- ```mermaid
+```mermaid
 graph LR
-    A[Patient] -->|Interacts With|> B(Hospital Appointment Scheduler)
-    C[Staff] -->|Interacts With|> B
-    B -->|Integrates With|> D(Hospital Systems)
-    
+    A[Patient] -->|Interacts With| B(Hospital Appointment Scheduler)
+    C[Staff] -->|Interacts With| B
+    B -->|Integrates With| D(Hospital Systems)
+```
 
- ## Container Diagram
- ```mermaid
+## Container Diagram
+```mermaid
 graph LR
-    A[Web Application] -->|Stores Data In|> B(Database)
-    A -->|Integrates With|> C(API)
-    C -->|Manages|> D(Hospital Systems)
-    
+    A[Web Application] -->|Stores Data In| B(Database)
+    A -->|Integrates With| C(API)
+    C -->|Manages| D(Hospital Systems)
+```
 
- ## Component Diagram
- ```mermaid
+## Component Diagram
+```mermaid
 graph LR
-    A[User Interface] -->|Interacts With|> B(Appointment Service)
-    B -->|Stores Data In|> C(Database Access)
-    B -->|Sends Notifications|> D(Notification Service)
-
+    A[User Interface] -->|Interacts With| B(Appointment Service)
+    B -->|Stores Data In| C(Database Access)
+    B -->|Sends Notifications| D(Notification Service)
+```
 
 
 ## Conclusion
