@@ -1,7 +1,8 @@
 # sonwabiso-moni-hospital-scheduler
 
-## Introduction
-The Hospital Appointment Scheduler is a web-based system designed to streamline the process of booking, rescheduling, and canceling medical appointments. Targeting the healthcare domain, this project aims to reduce patient wait times and improve hospital staff efficiency by providing an intuitive online platform.
+ ## Introduction.
+ The Hospital Appointment Scheduler is a web-based solution that simplifies the process of scheduling, rescheduling, and cancelling hospital appointments.  This project, which focusses on the healthcare area, intends to reduce patient wait times and enhance hospital staff productivity by providing an intuitive online platform.
 
-Once completed, the system will allow patients to view available doctor schedules, book appointments, and receive confirmation notifications, while hospital staff can manage schedules and track appointments in real-time.
+ Once completed, the system will allow patients to check available doctor schedules, make appointments, and receive confirmation messages, while hospital personnel will be able to manage calendars and track appointments in real time.
+
 
