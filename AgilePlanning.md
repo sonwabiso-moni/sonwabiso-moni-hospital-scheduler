@@ -69,3 +69,21 @@ In the next sprint, we’ll involve hospital staff earlier to gather feedback an
 As the system will eventually need to scale to handle thousands of patients, we will add a user story in a future sprint for load testing. This will help ensure that the system can support peak times (e.g., 1,000 concurrent users).
 
 
+---
+
+## 3. Integration with Prior Work (10 Marks)
+
+### Traceability Table
+
+| Diagram Type         | Diagram Title                  | Functional Requirement (FR)                                                 | User Story / Sprint Task                                                   |
+|----------------------|--------------------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| State Diagram        | Appointment                    | FR-001: The system shall allow patients to book appointments with available doctors. | US-003: As a patient, I want to book an appointment with a doctor so that I can receive medical consultation. |
+| State Diagram        | Appointment                    | FR-002: The system shall send automated reminders to patients 24 hours before the appointment. | US-007: As a system, I want to send automated reminders so that patients don’t miss appointments. |
+| Activity Diagram     | Book Appointment               | FR-001: The system shall allow patients to book appointments with available doctors. | US-003: As a patient, I want to book an appointment with a doctor so that I can receive medical consultation. |
+| Activity Diagram     | Appointment Cancellation       | FR-004: The system shall allow staff to manage patient appointments by rescheduling or canceling them. | US-004: As a patient, I want to cancel my appointment so that I can reschedule if needed. |
+| Activity Diagram     | View Doctor Schedule          | FR-005: The system shall allow doctors to view and modify their own appointment schedules. | US-005: As a doctor, I want to view my schedule so that I can manage my appointments. |
+| State Diagram        | Notification                   | FR-002: The system shall send automated reminders to patients 24 hours before the appointment. | US-007: As a system, I want to send automated reminders so that patients don’t miss appointments. |
+| Activity Diagram     | Patient Appointment History    | FR-007: The system shall allow patients to view their past appointments.      | US-010: As a patient, I want to see available doctors by specialty so I can choose the right one. |
+| Activity Diagram     | Manage User                    | FR-006: The system shall allow staff to manage patient appointments by rescheduling or canceling them. | US-006: As an admin, I want to manage users so that I can control system access. |
+| Activity Diagram     | View Available Slots           | FR-008: The system shall allow staff to search for available appointment slots based on doctor, date, and specialty. | US-010: As a patient, I want to see available doctors by specialty so I can choose the right one. |
+| Activity Diagram     | Real-Time Data Integration     | FR-009: The system shall integrate with existing hospital systems for real-time data sharing. | US-008: As a hospital IT staff, I want secure encryption of patient data so that we meet compliance standards. |
