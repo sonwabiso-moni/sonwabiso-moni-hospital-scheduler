@@ -15,6 +15,7 @@ stateDiagram-v2
     CheckedIn --> Completed : Doctor marks as complete
     Approved --> Cancelled : User cancels
     CheckedIn --> Cancelled : No-show or user cancels
+```
 
 
 ## 2.User Account State Diagram
@@ -27,9 +28,9 @@ stateDiagram-v2
     Active --> Suspended : Admin suspends
     Suspended --> Reactivated : Admin reactivates
     Active --> Deleted : User deletes account
+```
 
 ## 3. Doctor Profile State Diagram
-
 ```mermaid
 stateDiagram-v2
     [*] --> Created
@@ -38,6 +39,7 @@ stateDiagram-v2
     Active --> OnLeave : Doctor takes leave
     OnLeave --> Active : Returns from leave
     Active --> Archived : Doctor leaves hospital
+```
 
 ## 4. Patient Record State Diagram
 
@@ -47,6 +49,7 @@ stateDiagram-v2
     Created --> Updated : New information added
     Updated --> Archived : Patient is discharged
     Archived --> Reactivated : Patient returns
+```
 
 ## 5. Payment State Diagram
 
@@ -57,7 +60,7 @@ stateDiagram-v2
     Pending --> Failed : Payment declined
     Failed --> Retried : User retries payment
     Retried --> Completed : Payment successful
-
+```
 
 ## 6. Notification State Diagram
 
@@ -68,22 +71,24 @@ stateDiagram-v2
     Sent --> Read : User views it
     Sent --> Expired : User does not read within time
     Read --> Archived : For historical reference
-    
+```
  ## 7. Prescription State Diagram
 
-```mermaid   
+```mermaid
 stateDiagram-v2
     [*] --> Draft
     Draft --> Issued : Doctor finalizes prescription
     Issued --> Fulfilled : Patient collects medication
     Issued --> Cancelled : Doctor cancels or edits prescription
+```
 
  ## 8. Room Booking State Diagram
 
-```mermaid   
+```mermaid
 stateDiagram-v2
     [*] --> Available
     Available --> Booked : Appointment scheduled
     Booked --> InUse : Occupied by patient
     InUse --> Cleaned : Post-discharge
     Cleaned --> Available : Ready for next patient
+```
